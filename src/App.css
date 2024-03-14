@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+  /* Primary */
+  --Nutmeg: hsl(14, 45%, 36%);
+  --DarkRas: hsl(332, 51%, 32%);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --RoseWhite: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --LightGrey: hsl(30, 18%, 87%);
+  --WengeBrown: hsl(30, 10%, 34%);
+  --DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  padding: 3rem;
+  font-size: 2rem;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+#banner img {
+  border-radius: 2rem;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  font-size: 5rem;
+  font-weight: 400;
+  margin: 3rem 0;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  color: var(--WengeBrown);
+  margin-bottom: 4rem;
+}
+
+span {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Young Serif", serif;
+  font-size: 3rem;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--Nutmeg);
+  margin: 1rem 0;
+}
+
+li {
+  font-family: "Outfit", sans-serif;
+  color: var(--WengeBrown);
+}
+
+#prepare {
+  font-family: "Outfit", sans-serif;
+  padding: 3rem;
+  background-color: var(--RoseWhite);
+  margin: 3rem 0;
+}
+
+#prepare h3 {
+  color: var(--DarkRas);
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+#prepare ul {
+  margin-bottom: 0;
+}
+
+#prepare li {
+  padding: 1rem 3rem;
+}
+
+#ingredients li {
+  padding: 1rem 2rem;
+}
+
+hr {
+  margin: 3rem 0;
+}
+
+#instructions li {
+  padding: 1rem 2rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 4rem;
+  gap: 40%;
+}
+
+#table p {
+  margin: 0;
+  width: 10rem;
+}
+
+#table span {
+  color: var(--Nutmeg);
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ol li {
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+
+ol li::before {
+  display: inline-block;
+  content: counter(my-awesome-counter);
+  width: 40px;
+  color: var(--Nutmeg);
+  text-align: center;
+  margin-right: 0.5rem;
+  font-weight: 700;
+  margin-left: -3rem;
+}
+
+ol li:after {
+  content: '';
+  position: absolute;
+  left: 13px;
+  top: 44px;
+  height: 5px;
+  width: 5px;
+  background-color: var(--Nutmeg);
+  border-radius: 100%;
+  bottom: 5px;
+}
+
+
+
+@media only screen and (max-device-width: 502px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+  
+  #banner img {
+    max-width: 100vw;
+    border-radius: 0;
+  }
+
+  #text {
+    margin: 2rem;
+  }
+
+  #name {
+    font-family: "Young Serif", serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+  }
+
+  p {
+    font-family: "Outfit", sans-serif;
+    margin: 2rem 0;
+    color: var(--WengeBrown);
+  }
+
+  #prepare {
+    font-family: "Outfit", sans-serif;
+    padding: 1.5rem 1.5rem;
+    background-color: var(--RoseWhite);
+    margin: 0;
+  }
+
+  #prepare h3 {
+    color: var(--DarkRas);
+    margin: 0;
+  }
+
+  #prepare ul {
+    padding: 0.5rem 1rem 0 1.5rem;
+    margin: 0;
+  }
+
+  #prepare li {
+    padding: 0.5rem 1.5rem;
+  }
+
+  span {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-family: "Young Serif", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--Nutmeg);
+    margin: 1rem 0;
+  }
+
+  li {
+    font-family: "Outfit", sans-serif;
+    color: var(--WengeBrown);
+  }
+
+  #ingredients ul {
+    margin: 0;
+    padding: 0 0 0 1.5rem;
+    font-family: "Outfit", sans-serif;
+  }
+
+  #ingredients li {
+    padding: 0.5rem 1rem;
+  }
+
+  hr {
+    margin: 2rem 0;
+  }
+
+  #instructions ol {
+    margin: 0;
+    padding: 0 0 0 1.5rem;
+  }
+
+  #instructions li {
+    padding: 0.5rem 1rem;
+  }
+
+  #nutrition p {
+    padding-right: 0.5rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    
+  }
+
+  .flex {
+    padding: 0 2rem;
+    gap: 30%;
+  }
+
+  #table hr {
+    margin: 1rem 0;
+  }
+
+  #table p {
+    margin: 0;
+    width: 3rem;
+  }
+
+  ol li:after {
+    left: -7.5px;
+    top: 21.7px;
+    height: 2.5px;
+    width: 2.5px;
+  }
+}
+
