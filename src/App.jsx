@@ -1,6 +1,5 @@
 import banner from './assets/images/image-omelette.jpeg';
-// import './App.css'
-import './App2.css'
+import './App.css'
 
 function App() {
   return (
