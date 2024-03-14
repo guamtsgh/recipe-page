@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+  /* Primary */
+  --Nutmeg: hsl(14, 45%, 36%);
+  --DarkRas: hsl(332, 51%, 32%);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --RoseWhite: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --LightGrey: hsl(30, 18%, 87%);
+  --WengeBrown: hsl(30, 10%, 34%);
+  --DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Eggshell);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    background-color: var(--white);
+    padding: 3rem;
+    border-radius: 2rem;
+    max-width: 736px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+h1, h2 {
+    font-family: "Young Serif", serif;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+h2 {
+    color: var(--Nutmeg);
+}
+
+p, li, h3 {
+    font-family: "Outfit", sans-serif;
+    color: var(--WengeBrown);
+}
+
+#name {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+#detail {
+    margin-bottom: 2rem;
+}
+
+#prepare {
+    background-color: var(--RoseWhite);
+    padding: 1.5rem 2rem;
+}
+
+#prepare h3 {
+    color: var(--DarkRas);
+}
+
+#prepare ul {
+    padding: 0.5rem 1.5rem;
+}
+
+li {
+    padding: 0.3rem;
+}
+
+li::marker {
+    color: var(--DarkRas);
+}
+
+span {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+}
+
+#ingredients ul {
+    padding: 0rem 1.5rem;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+ol {
+    padding: 0rem 1.5rem;
+}
+
+#instructions li::marker {
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+
+#nutrition p {
+    margin-bottom: 2rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    gap: 40%;
+}
+
+#table .flex p {
+    width: 3rem;
+    margin: 0;
+}
+
+.flex span {
+    color: var(--Nutmeg);
+}
+
+#table hr {
+    margin: 1rem 0;
+}
+
+@media only screen and (max-device-width: 740px) {
+    body {
+        align-items: start;
+    }
+
+    #container {
+        border-radius: 0;
+        padding: 0;
+    }
+
+    #text {
+        padding: 2rem;
+    }
+
+    #name {
+        font-size: 2rem;
+    }
+
+
+}

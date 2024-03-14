@@ -1,9 +1,10 @@
 import banner from './assets/images/image-omelette.jpeg';
-import './App.css'
+// import './App.css'
+import './App2.css'
 
 function App() {
   return (
-    <>
+    <div id='container'>
     <section id="banner">
       <img src={banner} alt='Omelette Banner'/>
     </section>
@@ -72,7 +73,7 @@ function App() {
         </div>
       </div>
     </section>
-    </>
+    </div>
   )
 }
 
